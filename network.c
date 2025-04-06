@@ -3,7 +3,7 @@
 #include <string.h>
 #include <pcap.h>
 #include <arpa/inet.h>
-#include "myheader.h"  // 위 헤더 구조체들이 정의된 파일
+#include "myheader.h"
 
 
 void got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *packet)
@@ -52,14 +52,7 @@ void got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *pa
         printf("[TCP Body] is empty.\n");
     }
 
-
     printf("=============================\n");
-
-
-
-
-
-
 }
 
 
